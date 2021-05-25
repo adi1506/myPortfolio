@@ -16,6 +16,17 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth,window.innerHeight);
+
+//making mobile responsive
+window.addEventListener('resize' , function()
+{
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    renderer.setSize(width,height);
+    camera.aspect = width/height;
+    camera.updateProjectionMatrix();
+});
+
 camera.position.setZ(30);
 camera.position.setX(-3);
 
