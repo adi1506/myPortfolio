@@ -80,7 +80,7 @@ scene.background = spaceTexture;
 
 //Avatar
 
-const adiTexture = new THREE.TextureLoader().load('adi.jpeg');
+const adiTexture = new THREE.TextureLoader().load('adi4.png');
 
 const adi = new THREE.Mesh(
     new THREE.BoxGeometry(3,3,3),
